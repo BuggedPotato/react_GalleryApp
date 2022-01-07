@@ -23,10 +23,13 @@ class HomeScreen extends Component {
         <TouchableOpacity onPress={ ()=> this.props.navigation.navigate("gallery") }
             style={ss.main}
         >
-            <Text style={{ ...ss.whiteText, ...ss.title }}>Photos App</Text>
-            <Text style={ss.whiteText} >show gallery pictures</Text>
-            <Text style={ss.whiteText} >delete photo from device</Text>
-            <Text style={ss.whiteText} >share photo</Text>
+            <View style={{flex: 8, alignItems: "center", justifyContent: 'center',}}>
+                <Text style={{ ...ss.whiteText, ...ss.title }}>Photos App</Text>
+                <Text style={ss.whiteText} >show gallery pictures</Text>
+                <Text style={ss.whiteText} >delete photo from device</Text>
+                <Text style={ss.whiteText} >share photo</Text>
+            </View>
+            <Text style={{...ss.whiteText, color: "#ff9900", flex: 1}}>Dominik Pikoń 3P1</Text>
         </TouchableOpacity>
     );
   }
